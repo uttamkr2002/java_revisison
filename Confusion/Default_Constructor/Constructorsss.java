@@ -28,17 +28,17 @@ name= "sonu";
 
 // Parametrized constructor
 // it takes the value when an object is created
-Constructorsss (name,age,gender){
+Constructorsss (String name,int age,String gender){
     this.name=name;
     this.age=age;
-    this.gender = gender
+    this.gender = gender;
 
 }
 }
 
  class TestConstructors{
     public static void amin(String args[]){
-    Constructorsss c1 = new Constructorsss();  // it go to the non argument constructor
+   Constructorsss c1 = new Constructorsss();  // it go to the non argument constructor
     System.out.println(c1.age + c1.name);
 
     Constructorsss C2 = new Constructorsss ("uttam",15,"m");
