@@ -90,6 +90,38 @@ public class test2 {
 
     }
 
+
+//  Merge Sort
+
+
+// Find Mid
+public Node Find_Mid(Node head){
+         
+    Node slow = head;
+    Node fast = head;
+
+    while(fast != null && fast.next != null){
+        slow = slow.next;
+        fast = fast.next.next;
+    }
+    return slow;
+}
+
+public void Merge_Sort(Node start , Node end){
+   Node mid = Find_Mid(start);
+   Merge_Sort(start,mid);
+   Merge_Sort(mid.next,end);
+   merge(start,mid,end);
+}
+
+public void merge(Node start, Node mid , Node end){
+
+    Node left = start;
+    Node Right = end;
+
+    while(left.data )
+}
+
     public static void main(String args[]){
         test2 link = new test2();
         link.AddElement(1);
@@ -104,6 +136,8 @@ public class test2 {
         System.out.println(link.isCycle(head).data);
         link.RemoveCycle(head);
         link.Print(head);
+
+        Merge_Sort(head,tail);
 
 
     }
