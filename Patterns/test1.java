@@ -88,12 +88,37 @@ public class test1 {
             System.out.println(" ");
         }
     }
+
+    public static void Rhombus( int row){
+
+        for(int i=1;i<=row;i++){
+            int c =0;
+            
+            // 1st space
+            for(int j=1;j<=row-i;j++){
+                c++;
+                System.out.print("_"+" ");
+            }
+
+            // 2nd Star
+            for(int k=1;k<=row;k++){
+                System.out.print("*"+" ");
+            }
+
+            // 3rd 
+            for(int m=1;m<= 9-(c+row); m++){
+                System.out.print("_"+" ");
+            }
+            System.out.println(" ");
+        }
+    }
   
     public static void main(String args[]){
         Inv_Rot(4);
         Floyds(5);
         Zero_One(5);
         ButterFly(4);
+        Rhombus(5);
     }
 
 }
